@@ -3,9 +3,9 @@
 
 <h3 align="center">
 <img width="100" alt="스크린샷 2021-01-28 12 04 36" src="https://user-images.githubusercontent.com/48276522/106084340-8968c980-6161-11eb-93c9-abaa58370f7d.png">
-  ![pngwing com-2](https://user-images.githubusercontent.com/48276522/106843865-62267500-66ea-11eb-977b-ff90f5b627fb.png)(https://apps.apple.com/app/id1551631046)
-
 </h3>
+[![pngwing com-2](https://user-images.githubusercontent.com/48276522/106843865-62267500-66ea-11eb-977b-ff90f5b627fb.png)](https://apps.apple.com/app/id1551631046)
+
 <br>
 <br>
 
