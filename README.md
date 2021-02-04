@@ -4,9 +4,9 @@
 <h3 align="center">
 <img width="120" alt="스크린샷 2021-01-28 12 04 36" src="https://user-images.githubusercontent.com/48276522/106084340-8968c980-6161-11eb-93c9-abaa58370f7d.png">
 </h3>
-
+<h4 align="center">
 <img src="https://user-images.githubusercontent.com/48276522/106844075-ef69c980-66ea-11eb-82f3-ec2ff4532f2f.png" width="20%" url="https://apps.apple.com/app/id1551631046">
-
+</h4>
 <br>
 <br>
 
