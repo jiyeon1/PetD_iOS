@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="puh-Ft-Bp3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cafe24Oneprettynight.ttf">
+            <string>Cafe24Oneprettynight</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--오늘의 펫디-->
+        <scene sceneID="LQV-8S-sbB">
+            <objects>
+                <tableViewController id="dj7-0e-Vpm" customClass="NewsFeedTableViewController" customModule="DogWalker_iosapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="c16-QR-Cnd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" id="TcT-n4-GGj" customClass="PostCell" customModule="DogWalker_iosapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="500.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TcT-n4-GGj" id="Sf5-Pn-dYh">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="500.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kid-2" translatesAutoresizingMaskIntoConstraints="NO" id="dFW-qW-ZWH">
+                                            <rect key="frame" x="12" y="12" width="36" height="36"/>
+                                            <color key="backgroundColor" red="0.94309888161797406" green="0.91214962862233251" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="73z-aL-Jb2"/>
+                                                <constraint firstAttribute="width" constant="36" id="f0d-ih-uDa"/>
+                                                <constraint firstAttribute="width" secondItem="dFW-qW-ZWH" secondAttribute="height" multiplier="1:1" id="vng-J9-r5g"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lq-Ho-HVf">
+                                            <rect key="frame" x="60" y="17" width="33.5" height="21"/>
+                                            <fontDescription key="fontDescription" name="Cafe24Oneprettynight" family="Cafe24 Oneprettynight" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="squareshape" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NU0-k7-iDo">
+                                            <rect key="frame" x="20" y="57" width="374" height="372"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="NU0-k7-iDo" secondAttribute="height" multiplier="1:1" id="nXi-ii-G1W"/>
+                                            </constraints>
+                                        </imageView>
+                                        <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Lxk-0n-prS">
+                                            <rect key="frame" x="20" y="445.5" width="374" height="50"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="내용" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUC-Ba-frz">
+                                                    <rect key="frame" x="2" y="2" width="370" height="46"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" name="Cafe24Oneprettynight" family="Cafe24 Oneprettynight" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="MUC-Ba-frz" firstAttribute="top" secondItem="Lxk-0n-prS" secondAttribute="top" constant="2" id="64K-sR-9Rg"/>
+                                                <constraint firstItem="MUC-Ba-frz" firstAttribute="leading" secondItem="Lxk-0n-prS" secondAttribute="leading" constant="2" id="G1z-MY-ZpD"/>
+                                                <constraint firstAttribute="trailing" secondItem="MUC-Ba-frz" secondAttribute="trailing" constant="2" id="XVy-5i-IAQ"/>
+                                                <constraint firstAttribute="height" constant="50" id="fVH-Wm-WWH"/>
+                                                <constraint firstAttribute="bottom" secondItem="MUC-Ba-frz" secondAttribute="bottom" constant="2" id="w2J-iH-vBV"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Lxk-0n-prS" secondAttribute="bottom" constant="5" id="6cD-Rh-iZY"/>
+                                        <constraint firstItem="Lxk-0n-prS" firstAttribute="leading" secondItem="Sf5-Pn-dYh" secondAttribute="leading" constant="20" id="8EQ-rX-MTk"/>
+                                        <constraint firstAttribute="bottom" secondItem="NU0-k7-iDo" secondAttribute="bottom" constant="70" id="Bgp-wq-mav"/>
+                                        <constraint firstItem="dFW-qW-ZWH" firstAttribute="leading" secondItem="Sf5-Pn-dYh" secondAttribute="leading" constant="12" id="C5W-pV-Ihq"/>
+                                        <constraint firstItem="dFW-qW-ZWH" firstAttribute="top" secondItem="Sf5-Pn-dYh" secondAttribute="top" constant="12" id="T86-ta-uuJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="NU0-k7-iDo" secondAttribute="trailing" constant="20" id="VgV-NI-TUE"/>
+                                        <constraint firstItem="NU0-k7-iDo" firstAttribute="leading" secondItem="Sf5-Pn-dYh" secondAttribute="leading" constant="20" id="XAs-1C-0Q2"/>
+                                        <constraint firstItem="0Lq-Ho-HVf" firstAttribute="top" secondItem="Sf5-Pn-dYh" secondAttribute="topMargin" constant="6" id="az5-Ke-koO"/>
+                                        <constraint firstItem="NU0-k7-iDo" firstAttribute="top" secondItem="dFW-qW-ZWH" secondAttribute="bottom" constant="8" symbolic="YES" id="jiT-es-lvE"/>
+                                        <constraint firstAttribute="trailing" secondItem="Lxk-0n-prS" secondAttribute="trailing" constant="20" id="l1u-8h-HL4"/>
+                                        <constraint firstItem="0Lq-Ho-HVf" firstAttribute="leading" secondItem="dFW-qW-ZWH" secondAttribute="trailing" constant="12" id="qXi-Qk-kl7"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="postImageView" destination="NU0-k7-iDo" id="Ho8-Z1-KOa"/>
+                                    <outlet property="profileImageView" destination="dFW-qW-ZWH" id="ZvV-RJ-ByF"/>
+                                    <outlet property="showContentTextView" destination="MUC-Ba-frz" id="98P-4l-NT5"/>
+                                    <outlet property="usernameLabel" destination="0Lq-Ho-HVf" id="7ZK-9k-GKt"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="dj7-0e-Vpm" id="K1u-48-D1Q"/>
+                            <outlet property="delegate" destination="dj7-0e-Vpm" id="6Jx-bo-nvW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="오늘의 펫디" id="U93-5C-Uik"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iZQ-74-Nkp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2485.507246376812" y="610.71428571428567"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IwN-j0-dOh">
+            <objects>
+                <navigationController id="puh-Ft-Bp3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="newspaper" catalog="system" selectedImage="newspaper.fill" id="hxP-bM-S1K"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vyq-0e-KdY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dj7-0e-Vpm" kind="relationship" relationship="rootViewController" id="KOJ-EO-w5m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="obi-hu-P9n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1581" y="611"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="kid-2" width="256" height="256"/>
+        <image name="newspaper" catalog="system" width="128" height="108"/>
+        <image name="newspaper.fill" catalog="system" width="128" height="111"/>
+        <image name="squareshape" catalog="system" width="128" height="114"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
